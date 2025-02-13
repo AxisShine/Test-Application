@@ -1,0 +1,22 @@
+services:
+  hello_world:
+    image: alpine
+    command: tail -f /dev/null 
+    healthcheck:
+      test: ["CMD", "true"]
+      interval: 1m30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+      start_interval: 5s
+
+  hello_world2:
+    image: alpine
+    command: tail -f /dev/null 
+    healthcheck:
+      test: ["CMD", "true"]
+      interval: 1m30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+      start_interval: 5s
